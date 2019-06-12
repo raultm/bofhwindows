@@ -94,16 +94,15 @@ do
   {
     '1'{
       $username=Read-Host "Nombre del usuario (en minusculas, sin espacios ni caracteres raros mejor)"
-      $password=Read-Host  "Password (vacío para usuario sin contraseña)"
-      $fullname=Read-Host  "Nombre Visible (vacío si quieres que sea el mismo nombre de usuario)"
+      $password=Read-Host  "Password (vacio para usuario sin password)"
+      $fullname=Read-Host  "Nombre Visible (vacio si quieres que sea el mismo nombre de usuario)"
       Create-User $username $password $fullname
       Set-Admin-Role $username
     }'2'{
       $username=Read-Host "Nombre del usuario (en minusculas, sin espacios ni caracteres raros mejor)"
-      $password=Read-Host  "Password (vacío para usuario sin contraseña)"
-      $fullname=Read-Host  "Nombre Visible (vacío si quieres que sea el mismo nombre de usuario)"
+      $password=Read-Host  "Password (vacio para usuario sin password)"
+      $fullname=Read-Host  "Nombre Visible (vacio si quieres que sea el mismo nombre de usuario)"
       Create-User $username $password $fullname""
-      
     }'3'{
       Install-Chocolatey
     }'4'{
